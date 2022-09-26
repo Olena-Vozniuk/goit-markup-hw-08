@@ -1,0 +1,37 @@
+.customers-list {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .customers-list__item {
+    width: 170px;
+    height: 92px;
+  }
+  
+  .customers-list__logo {
+    width: 106px;
+    height: 60px;
+  }
+  
+  .customers-list__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--logo-basic-color);
+    border-radius: 4px;
+    color: var(--logo-basic-color);
+    fill: currentColor;
+    height: 100%;
+    width: 100%;
+  
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+  }
+  }
+  
+  
