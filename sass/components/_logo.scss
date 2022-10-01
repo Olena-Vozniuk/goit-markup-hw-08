@@ -4,6 +4,8 @@
     font-size: 26px;
     line-height: 1.2;
     display: inline-block;
+    margin-top: 16px;
+    margin-bottom: 16px;
   }
   .logo_color-accent {
     color: var(--accent-color);
@@ -13,4 +15,17 @@
   }
   .logo_color-light {
     color: var(--light-text-color);
+  }
+
+  @media screen and(min-width: 768px) {
+    .logo {
+      margin-top: 26px;
+      margin-bottom: 26px;
+    }
+  }
+  @media screen and(min-width: 1200px) {
+    .logo {
+      margin-top: 24px;
+      margin-bottom: 25px;
+    }
   }
