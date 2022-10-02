@@ -823,7 +823,7 @@ ul {
 
 .team-list__card {
   text-align: center;
-  width: 450px;
+  max-width: 450px;
 }
 
 .team-list__photos {
@@ -890,8 +890,8 @@ ul {
   .team-list__img {
     width: calc((100% - 30px) / 2);
   }
-  .team-list__img .team-list__card {
-    width: 354px;
+  .team-list__card {
+    max-width: 354px;
   }
 }
 @media screen and (min-width: 1200px) {

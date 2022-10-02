@@ -13,7 +13,7 @@
 
   .team-list__card {
     text-align: center;
-    width: 450px;
+    max-width: 450px;
   }
 
     .team-list__photos {
@@ -83,9 +83,9 @@
   @media screen and(min-width: 768px) {
     .team-list__img{
       width: calc((100% - 30px) / 2);
+    }
     .team-list__card {
-        width: 354px;
-      }  
+      max-width: 354px;
     }
   }
 
