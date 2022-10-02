@@ -1108,8 +1108,22 @@ ul {
   .address-list__map-link:hover, .address-list__map-link:focus {
     color: var(--accent-color);
   }
+  .logo-tel-wrapper {
+    text-align: start;
+  }
+  .address-list {
+    display: block;
+  }
+  .footer-social__title {
+    text-align: start;
+  }
   .footer-form__wrapper {
     display: flex;
+    flex-direction: row;
+    align-items: baseline;
+  }
+  .footer-form__txt {
+    text-align: start;
   }
 }
 .portfolio.not-link {
