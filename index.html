@@ -164,32 +164,41 @@
           <h2 class="section-title">Чим ми займаємося</h2>
           <ul class="services-list not-ul">
             <li class="services-list__item img-desctop">
-              <img srcset=""
-                src="./images/box1.jpeg"
+              <picture>
+                <source srcset="./images/img-1.jpeg 1x, ./images/img-1@2x.jpeg 2x" media="(min-width: 1200px)">
+              <img 
+                src="./images/img-1.jpeg"
                 alt="створення сайтів"
                 width="370"
                 class="services-list__img"
               />
+            </picture>
               <div class="services-list__overlay">
                 <p class="services-list__txt">Десктопні додатки</p>
               </div>
             </li>
             <li class="services-list__item img-mobile">
-              <img
-                src="./images/box2.jpeg"
+              <picture>
+                <source srcset="./images/img-2.jpeg 1x, ./images/img-2@2x.jpeg 2x" media="(min-width: 1200px)">
+              <img 
+                src="./images/img-2.jpeg"
                 alt="адаптація сайту під телефон"
                 width="370"
               />
+            </picture>
               <div class="services-list__overlay">
                 <p class="services-list__txt">Мобільні додатки</p>
               </div>
             </li>
             <li class="services-list__item img-designe">
-              <img
-                src="./images/box3.jpeg"
+              <picture>
+                <source srcset="./images/img-3.jpeg 1x, ./images/img-3@2x.jpeg 2x" media="(min-width: 1200px)">
+              <img 
+                src="./images/img-3.jpeg"
                 alt="графічний дизайн"
                 width="370"
               />
+            </picture>
               <div class="services-list__overlay">
                 <p class="services-list__txt">Дизайнерські рішення</p>
               </div>
@@ -197,12 +206,17 @@
           </ul>
         </div>
       </section>
-      <!--  <section class="section section-team">
+       <section class="section section-team">
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
           <ul class="team-list not-ul">
             <li class="team-list__photos">
-              <img src="./images/team_1_desktop.jpg" alt="фото- ігор" width="270" />
+              <picture>
+                <source srcset="./images/team_1_desktop.jpg 1x, ./images/team_1_desktop@2x.jpg 2x" media="(min-width: 1200px)">
+                <source srcset="./images/team_1_tablet.jpg 1x, ./images/team_1_tablet@2x.jpg 2x" media="(min-width: 768px)">
+                <source srcset="./images/team_1_mobile.jpg 1x, ./images/team_1_mobile@2x.jpg 2x" media="(max-width: 767px)">
+              <img src="./images/team_1_mobile.jpg" alt="фото ігор" class="team-list__img" />
+              </picture>
               <div class="team-list__card">
                 <h3 class="team-list__worker-name">Ігор Дем'яненко</h3>
                 <p class="team-list__worker-position">Product Designer</p>
@@ -239,7 +253,12 @@
               </div>
             </li>
             <li class="team-list__photos">
-              <img src="./images/team_2_desktop.jpg" alt="фото ольга" width="270" />
+              <picture>
+                <source srcset="./images/team_2_desktop.jpg 1x, ./images/team_2_desktop@2x.jpg 2x" media="(min-width: 1200px)">
+                <source srcset="./images/team_2_tablet.jpg 1x, ./images/team_2_tablet@2x.jpg 2x" media="(min-width: 768px)">
+                <source srcset="./images/team_2_mobile.jpg 1x, ./images/team_2_mobile@2x.jpg 2x" media="(max-width: 767px)">
+              <img src="./images/team_2_desktop.jpg" alt="фото ольга" class="team-list__img"/>
+              </picture>
               <div class="team-list__card">
                 <h3 class="team-list__worker-name">Ольга Рєпіна</h3>
                 <p class="team-list__worker-position">Frontend Developer</p>
@@ -276,7 +295,12 @@
               </div>
             </li>
             <li class="team-list__photos">
-              <img src="./images/team_3_desktop.jpg" alt="фото микола" width="270" />
+              <picture>
+                <source srcset="./images/team_3_desktop.jpg 1x, ./images/team_3_desktop@2x.jpg 2x" media="(min-width: 1200px)">
+                <source srcset="./images/team_3_tablet.jpg 1x, ./images/team_3_tablet@2x.jpg 2x" media="(min-width: 768px)">
+                <source srcset="./images/team_3_mobile.jpg 1x, ./images/team_3_mobile@2x.jpg 2x" media="(max-width: 767px)">
+              <img src="./images/team_3_desktop.jpg" alt="фото микола" class="team-list__img"/>
+              </picture>
               <div class="team-list__card">
                 <h3 class="team-list__worker-name">Микола Тарасов</h3>
                 <p class="team-list__worker-position">Marketing</p>
@@ -313,7 +337,12 @@
               </div>
             </li>
             <li class="team-list__photos">
-              <img src="./images/team_4_desktop.jpg" alt="фото михайло" width="270" />
+              <picture>
+                <source srcset="./images/team_4_desktop.jpg 1x, ./images/team_4_desktop@2x.jpg 2x" media="(min-width: 1200px)">
+                <source srcset="./images/team_4_tablet.jpg 1x, ./images/team_4_tablet@2x.jpg 2x" media="(min-width: 768px)">
+                <source srcset="./images/team_4_mobile.jpg 1x, ./images/team_4_mobile@2x.jpg 2x" media="(max-width: 767px)">
+              <img src="./images/team_4_desktop.jpg" alt="фото михайло" class="team-list__img"/>
+              </picture>
               <div class="team-list__card">
                 <h3 class="team-list__worker-name">Михайло Єрмаков</h3>
                 <p class="team-list__worker-position">UI Designer</p>
@@ -402,7 +431,7 @@
         </div>
       </section>
     </main>
-    <footer class="site-footer">
+    <!--  <footer class="site-footer">
       <div class="container footer">
         <div class="logo-tel-wrapper">
           <div class="logo-footer">
