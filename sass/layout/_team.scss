@@ -82,11 +82,9 @@
 
   @media screen and(min-width: 768px) {
     .team-list__img{
-      width: calc((100% - 30px) / 2);
-    }
-    .team-list__card {
       max-width: 354px;
     }
+    
   }
 
   @media screen and(min-width: 1200px) {
