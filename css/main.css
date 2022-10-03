@@ -197,8 +197,6 @@ ul {
   font-size: 26px;
   line-height: 1.2;
   display: inline-block;
-  margin-top: 16px;
-  margin-bottom: 16px;
 }
 
 .logo_color-accent {
@@ -213,14 +211,20 @@ ul {
   color: var(--light-text-color);
 }
 
+@media screen and (max-width: 767px) {
+  .header__logo {
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+}
 @media screen and (min-width: 768px) {
-  .logo {
+  .header__logo {
     margin-top: 26px;
     margin-bottom: 26px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .logo {
+  .header__logo {
     margin-top: 24px;
     margin-bottom: 25px;
   }
@@ -232,7 +236,7 @@ ul {
     left: 0;
     z-index: 100;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background-color: var(--light-text-color);
     opacity: 0;
     visibility: hidden;
@@ -246,8 +250,12 @@ ul {
   }
   .mobile-menu__container {
     position: relative;
-    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     padding-top: 48px;
+    padding-bottom: 48px;
+    padding-left: 40px;
   }
   .burger-btn {
     cursor: pointer;
@@ -275,7 +283,6 @@ ul {
     font-weight: 500;
     line-height: 1.175;
     letter-spacing: 0.02em;
-    margin-bottom: 302px;
   }
   .mobile-menu-nav__item:not(:last-child) {
     margin-bottom: 32px;
@@ -286,22 +293,25 @@ ul {
   .current {
     color: var(--accent-color);
   }
+  .mobile-menu-contacts {
+    margin-top: auto;
+    margin-bottom: 64px;
+  }
   .mobile-menu-contacts__tel {
     font-size: 34px;
     font-weight: 500;
     line-height: 1.176;
     color: var(--accent-color);
-    margin-bottom: 32px;
   }
   .mobile-menu-contacts__mail {
     font-size: 24px;
     font-weight: 500;
     line-height: 1.166;
     color: var(--main-text-color);
-    margin-bottom: 64px;
   }
   .mobile-menu-social-list {
     display: flex;
+    flex-wrap: wrap;
   }
   .mobile-menu-social-list__item:not(:last-child) {
     border-right: 1px solid rgba(33, 33, 33, 0.2);

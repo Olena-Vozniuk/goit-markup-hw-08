@@ -26,7 +26,7 @@
         flex-direction: column;
         height: 100%;
         padding-top: 48px;
-        padding-bottom: 90px;
+        padding-bottom: 48px;
         padding-left: 40px;
 }
     
@@ -76,6 +76,7 @@
     
     .mobile-menu-contacts {
         margin-top: auto;
+        margin-bottom: 64px;
   }
 
     .mobile-menu-contacts__tel{
@@ -89,6 +90,7 @@
     } 
     
     .mobile-menu-social-list{
+        display: flex;
         flex-wrap: wrap;
     }
     
