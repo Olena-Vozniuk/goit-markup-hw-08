@@ -25,6 +25,9 @@
         display: flex;
         flex-direction: column;
         height: 100%;
+        padding-top: 48px;
+        padding-bottom: 58px;
+        padding-left: 40px;
 }
     
     .burger-btn{
@@ -73,7 +76,6 @@
     
     .mobile-menu-contacts {
         margin-top: auto;
-        padding-bottom: 64px;
   }
 
     .mobile-menu-contacts__tel{
