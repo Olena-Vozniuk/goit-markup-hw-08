@@ -80,8 +80,6 @@
   }
 
 
-
-
     .mobile-menu-contacts__tel{
         @include font (34px,500,1.176);
         color: var(--accent-color);
@@ -111,6 +109,20 @@
     }
 }
 
+
+@media screen and (max-width:479px) {
+    .mobile-menu-contacts__tel{
+        @include font (26px,500,1.176);
+    }
+    .mobile-menu-social-list__link{
+        @include font (14px,500,1.22);
+    }
+    .mobile-menu-social-list__item:not(:last-child){
+        border-right: 1px solid rgba(33, 33, 33, 0.2);
+        margin-right: 5px;
+        padding-right: 5px;
+    }
+}
 
 @media screen and (min-width:768px) {
     .mobile-menu{

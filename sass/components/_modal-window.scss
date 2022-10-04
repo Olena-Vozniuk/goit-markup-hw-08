@@ -34,6 +34,14 @@
   }
   }
 
+  @media screen and (max-width: 767px) {
+    .modal{
+      top: 20px;
+      transform: translatex(-50%);
+      overflow: scroll;
+    }
+  }
+
   @media screen and (min-width: 480px) {
     .modal{
       width: 450px;

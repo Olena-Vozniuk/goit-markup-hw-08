@@ -1,4 +1,6 @@
 
+
+
 .modal-form-title {
     font-weight: 700;
     font-size: 20px;
@@ -159,6 +161,15 @@
   .modal-form__policy {
     color: rgba(33, 150, 243, 1);
     @include font (12px,400,1.16);
+  }
+
+  @media screen and (max-width: 479px) {
+    .modal-form__concord{
+      @include font (6px,400,1.16);
+    }
+    .modal-form__policy {
+      @include font (6px,400,1.16);
+    }
   }
 
   @media screen and (min-width: 1200px) {
